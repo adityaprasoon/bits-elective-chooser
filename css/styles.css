@@ -121,6 +121,9 @@ td .button { padding: .4rem .65rem; font-size: .8rem; white-space: nowrap; }
   .course-grid, .summary-columns, .filters { grid-template-columns: 1fr; }
   .summary-columns { gap: 1rem; }
   .unit-total { font-size: .82rem; }
+}
+
+@media (max-width: 820px) {
   .explorer .section-heading { flex-wrap: wrap; }
   .explorer .table-wrap { overflow: visible; border: 0; }
   .explorer table, .explorer tbody { display: block; }
