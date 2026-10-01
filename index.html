@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore and validate M.Tech AIML Semester 2 elective choices.">
+    <title>BITS Elective Chooser</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/config.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">BITS Pilani · Academic planner</p>
+        <h1 id="program-title"></h1>
+        <p id="program-subtitle" class="subtitle"></p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="panel selector" aria-labelledby="selector-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Build your schedule</p>
+            <h2 id="selector-heading">Choose your electives</h2>
+          </div>
+          <button id="reset-button" class="button button-secondary" type="button">Reset choices</button>
+        </div>
+        <p class="section-intro">Choose <span id="required-count"></span> electives from different buckets. Common courses are included automatically.</p>
+
+        <fieldset class="specialization-picker">
+          <legend>Specialization quick-select</legend>
+          <div id="specialization-buttons" class="button-row"></div>
+        </fieldset>
+
+        <div id="course-grid" class="course-grid" aria-label="Elective courses grouped by bucket"></div>
+
+        <div class="action-row">
+          <button id="share-button" class="button button-primary" type="button">Copy share link</button>
+          <span id="toast" class="toast" role="status" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <section class="panel summary-panel" aria-labelledby="summary-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Your current plan</p>
+            <h2 id="summary-heading">Semester summary</h2>
+          </div>
+          <div id="unit-total" class="unit-total">0 units</div>
+        </div>
+        <p id="selection-status" class="selection-status" role="status" aria-live="polite"></p>
+        <div class="summary-columns">
+          <div>
+            <h3>Common courses</h3>
+            <ul id="common-course-list" class="schedule-list"></ul>
+          </div>
+          <div>
+            <h3>Selected electives</h3>
+            <ul id="selected-course-list" class="schedule-list"></ul>
+          </div>
+        </div>
+        <p id="specialization-result" class="specialization-result"></p>
+      </section>
+
+      <section class="panel explorer" aria-labelledby="explorer-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Explore the possibilities</p>
+            <h2 id="explorer-heading">All valid combinations</h2>
+          </div>
+          <span id="combination-count" class="result-count"></span>
+        </div>
+        <div class="filters">
+          <label>Specialization
+            <select id="specialization-filter">
+              <option value="all">All</option>
+              <option value="nlp">NLP</option>
+              <option value="audio_vision">Audio &amp; Vision</option>
+              <option value="deep_learning">Deep Learning</option>
+              <option value="dual">Dual specialization</option>
+              <option value="general">General / none</option>
+            </select>
+          </label>
+          <label>Course
+            <select id="course-filter">
+              <option value="all">Any course</option>
+            </select>
+          </label>
+          <label>Total units
+            <select id="unit-filter">
+              <option value="all">Any total</option>
+            </select>
+          </label>
+          <label class="search-label">Search
+            <input id="search-filter" type="search" placeholder="Course code or title">
+          </label>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Elective 1</th>
+                <th scope="col">Elective 2</th>
+                <th scope="col">Specialization</th>
+                <th scope="col">Total units</th>
+                <th scope="col"><span class="sr-only">Action</span></th>
+              </tr>
+            </thead>
+            <tbody id="combination-table"></tbody>
+          </table>
+        </div>
+        <p id="empty-results" class="empty-results" hidden>No combinations match these filters.</p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>Choice planning aid only. Confirm course availability and academic requirements with your program.</p>
+    </footer>
+  </body>
+</html>
