@@ -43,6 +43,13 @@ main { display: grid; gap: 1.25rem; padding-block: 1.5rem; }
 .section-heading h2 { margin: .15rem 0 0; color: var(--navy); font-size: 1.45rem; }
 .section-intro { margin: .65rem 0 1.35rem; color: var(--muted); }
 h3 { margin: 0 0 .55rem; color: var(--navy); font-size: 1rem; }
+.guide h3 { margin-top: 1.35rem; }
+.guide h3:first-of-type { margin-top: 0; }
+.guide-list { display: grid; gap: .85rem; margin: 0; padding-left: 1.35rem; }
+.guide-list p { margin: .35rem 0 0; }
+.guide-list ul { margin-top: .35rem; padding-left: 1.25rem; }
+.guide-list li + li { margin-top: .25rem; }
+.guide a { color: var(--blue); font-weight: 700; }
 
 .button { border: 1px solid transparent; border-radius: 8px; padding: .65rem .95rem; font: inherit; font-weight: 700; cursor: pointer; transition: background .15s ease, border-color .15s ease, transform .15s ease; }
 .button:hover:not(:disabled) { transform: translateY(-1px); }
