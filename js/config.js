@@ -1,7 +1,7 @@
 window.APP_CONFIG = {
   program: {
-    title: "M.Tech AIML (Semester 2) Elective Chooser",
-    subtitle: "Select your specialization and electives for the upcoming semester",
+    title: "M.Tech AIML (Semester 2) Elective Chooser - Unofficial App",
+    subtitle: "Select your specialization and electives for the upcoming semester. Subjects shown are tentative and will be updated post 3rd October orientation.",
     requiredElectivesCount: 2
   },
   mandatoryCourses: [
