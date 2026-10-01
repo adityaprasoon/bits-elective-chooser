@@ -121,6 +121,17 @@ td .button { padding: .4rem .65rem; font-size: .8rem; white-space: nowrap; }
   .course-grid, .summary-columns, .filters { grid-template-columns: 1fr; }
   .summary-columns { gap: 1rem; }
   .unit-total { font-size: .82rem; }
-  .table-wrap { margin-inline: -.35rem; }
-  th, td { padding: .55rem; }
+  .explorer .table-wrap { overflow: visible; border: 0; }
+  .explorer table, .explorer tbody { display: block; }
+  .explorer thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .explorer tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .4rem .75rem; margin-bottom: .75rem; padding: .85rem; border: 1px solid var(--line); border-radius: 8px; }
+  .explorer tbody td { min-width: 0; padding: 0; border: 0; overflow-wrap: anywhere; }
+  .explorer tbody td:nth-child(1), .explorer tbody td:nth-child(2), .explorer tbody td:nth-child(5) { grid-column: 1 / -1; }
+  .explorer .combo-course { min-width: 0; }
+  .explorer tbody td:not(:last-child)::before { display: block; margin-bottom: .15rem; color: var(--navy); font-size: .7rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; }
+  .explorer tbody td:nth-child(1)::before { content: "Elective 1"; }
+  .explorer tbody td:nth-child(2)::before { content: "Elective 2"; }
+  .explorer tbody td:nth-child(3)::before { content: "Specialization"; }
+  .explorer tbody td:nth-child(4)::before { content: "Total units"; }
+  .explorer tbody td .button { width: 100%; }
 }
