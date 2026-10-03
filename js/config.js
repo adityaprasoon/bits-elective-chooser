@@ -1,7 +1,7 @@
 window.APP_CONFIG = {
   program: {
     title: "M.Tech AIML (Semester 2) Elective Chooser - Unofficial App",
-    subtitle: "Select your specialization and electives for the upcoming semester. Subjects shown are tentative and will be updated post 3rd October orientation.",
+    subtitle: "Explore elective options and plan your specialization for M.Tech AIML Semester 2.",
     requiredElectivesCount: 2
   },
   mandatoryCourses: [
@@ -27,16 +27,16 @@ window.APP_CONFIG = {
       courses: [
         { code: "AIMLCZG567", title: "AI and ML Techniques for Cyber Security", units: 5 },
         { code: "AIMLCZG525", title: "Computer Vision", units: 4 },
-        { code: "AIMLCZG546", title: "Software Engineering for Machine Learning", units: 4 }
+        { code: "AIMLCZG509", title: "Architecting AI systems", units: 4 }
       ]
     },
     {
       id: "bucket_3",
       name: "Bucket 3",
       courses: [
-        { code: "AIMLCZG533", title: "Unsupervised Deep Learning", units: 4 },
+        { code: "AIMLCZG516", title: "ML System optimization", units: 4 },
         { code: "AIMLCZG526", title: "Probabilistic Graphical Models", units: 4 },
-        { code: "AIMLZG540", title: "Video Analysis", units: 4 }
+        { code: "AIMLCZG540", title: "Video Analysis", units: 4 }
       ]
     },
     {
@@ -45,7 +45,8 @@ window.APP_CONFIG = {
       courses: [
         { code: "AIMLCZG537", title: "Information Retrieval", units: 4 },
         { code: "AIMLCZG529", title: "Data Management for Machine Learning", units: 4 },
-        { code: "AIMLCZG515", title: "Distributed Machine Learning", units: 4 }
+        { code: "AIMLCZG543", title: "Multimodal Information Retrieval", units: 4 },
+        { code: "AIMLCZG533", title: "Unsupervised Deep Learning", units: 4 }
       ]
     }
   ]

@@ -33,20 +33,21 @@ Every student must take these 2 compulsory subjects in Semester 2:
 *Total Common Units:* 8 Units.
 
 ### 3.2. Elective Pool & Buckets
-Students must choose exactly **2 electives** from a total of **10 courses** distributed across **4 Buckets**:
+Students must choose exactly **2 electives** from a total of **11 courses** distributed across **4 Buckets**:
 
 | Bucket | Course Code | Course Title | Units | Specialization Note |
 |---|---|---|---|---|
 | **Bucket 1** | `AIMLCZG530` | Natural Language Processing | 4 | **Mandatory for NLP Specialization** |
 | **Bucket 2** | `AIMLCZG567` | AI and ML Techniques for Cyber Security | 5 | — |
 | | `AIMLCZG525` | Computer Vision | 4 | **Mandatory for Audio and Vision Specialization** |
-| | `AIMLCZG546` | Software Engineering for Machine Learning | 4 | — |
-| **Bucket 3** | `AIMLCZG533` | Unsupervised Deep Learning | 4 | **Mandatory for Deep Learning Specialization** |
+| | `AIMLCZG509` | Architecting AI systems | 4 | — |
+| **Bucket 3** | `AIMLCZG516` | ML System optimization | 4 | — |
 | | `AIMLCZG526` | Probabilistic Graphical Models | 4 | — |
-| | `AIMLZG540`  | Video Analysis | 4 | — |
+| | `AIMLCZG540`  | Video Analysis | 4 | — |
 | **Bucket 4** | `AIMLCZG537` | Information Retrieval | 4 | — |
 | | `AIMLCZG529` | Data Management for Machine Learning | 4 | — |
-| | `AIMLCZG515` | Distributed Machine Learning | 4 | — |
+| | `AIMLCZG543` | Multimodal Information Retrieval | 4 | — |
+| | `AIMLCZG533` | Unsupervised Deep Learning | 4 | **Mandatory for Deep Learning Specialization** |
 
 ---
 
@@ -59,11 +60,11 @@ Students must choose exactly **2 electives** from a total of **10 courses** dist
    - For default M.Tech AIML Sem 2 (2 electives across 4 buckets):
      - $B_1 \times B_2 = 1 \times 3 = 3$
      - $B_1 \times B_3 = 1 \times 3 = 3$
-     - $B_1 \times B_4 = 1 \times 3 = 3$
+     - $B_1 \times B_4 = 1 \times 4 = 4$
      - $B_2 \times B_3 = 3 \times 3 = 9$
-     - $B_2 \times B_4 = 3 \times 3 = 9$
-     - $B_3 \times B_4 = 3 \times 3 = 9$
-     - **Total valid elective combinations = 36**.
+     - $B_2 \times B_4 = 3 \times 4 = 12$
+     - $B_3 \times B_4 = 3 \times 4 = 12$
+     - **Total valid elective combinations = 43**.
 3. **Configurable Specializations**:
    - Each specialization definition in the configuration specifies its mandatory course code(s) (e.g., `AIMLCZG530` for NLP, `AIMLCZG525` for Audio and Vision, `AIMLCZG533` for Deep Learning).
    - The application dynamically verifies whether selected courses meet one or multiple specialization rules.
@@ -104,7 +105,7 @@ Students must choose exactly **2 electives** from a total of **10 courses** dist
   - **Share Button**: Copies URL containing query parameters to clipboard with a toast notification ("Link copied to clipboard!").
 
 ### 5.2. Workflow 2: All Valid Combinations Explorer
-- Interactive table/matrix displaying all 36 valid elective combinations.
+- Interactive table/matrix displaying all 43 valid elective combinations.
 - Real-time search and filter controls:
   - Filter by Specialization (All, NLP, Audio & Vision, Deep Learning, Dual, General).
   - Filter by specific preferred course (dropdown/search).
@@ -207,8 +208,8 @@ To enable seamless repurposing for other programs, semesters, or institutions, a
           "units": 4
         },
         {
-          "code": "AIMLCZG546",
-          "title": "Software Engineering for Machine Learning",
+          "code": "AIMLCZG509",
+          "title": "Architecting AI systems",
           "units": 4
         }
       ]
@@ -218,8 +219,8 @@ To enable seamless repurposing for other programs, semesters, or institutions, a
       "name": "Bucket 3",
       "courses": [
         {
-          "code": "AIMLCZG533",
-          "title": "Unsupervised Deep Learning",
+          "code": "AIMLCZG516",
+          "title": "ML System optimization",
           "units": 4
         },
         {
@@ -228,7 +229,7 @@ To enable seamless repurposing for other programs, semesters, or institutions, a
           "units": 4
         },
         {
-          "code": "AIMLZG540",
+          "code": "AIMLCZG540",
           "title": "Video Analysis",
           "units": 4
         }
@@ -249,8 +250,13 @@ To enable seamless repurposing for other programs, semesters, or institutions, a
           "units": 4
         },
         {
-          "code": "AIMLCZG515",
-          "title": "Distributed Machine Learning",
+          "code": "AIMLCZG543",
+          "title": "Multimodal Information Retrieval",
+          "units": 4
+        },
+        {
+          "code": "AIMLCZG533",
+          "title": "Unsupervised Deep Learning",
           "units": 4
         }
       ]
